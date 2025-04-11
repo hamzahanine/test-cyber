@@ -5,7 +5,7 @@ body {
     font-family: Arial, sans-serif;
     
     /* ✅ image en fond de toute la page */
-    background-image: url("/fond-ecran.png"); /* change le chemin si besoin */
+    background-image: url("fond-ecran.png"); /* change le chemin si besoin */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
