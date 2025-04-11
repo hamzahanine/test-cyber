@@ -1,12 +1,41 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <title>Confirmation</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .message-box {
+      background-color: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .message-box h2 {
+      color: #4CAF50;
+    }
+
+    .message-box p {
+      color: #333;
+    }
+  </style>
 </head>
-<body style="font-family: Arial; padding: 40px;">
-  <h2>Mot de passe mis à jour</h2>
-  <p>Merci, votre mot de passe a été mis à jour avec succès.</p>
+<body>
+  <div class="message-box">
+    <h2>✅ Mise à jour réussie</h2>
+    <p>Votre mot de passe a été mis à jour avec succès.<br>
+    Vous pouvez fermer cette page.</p>
+  </div>
 </body>
 </html>
