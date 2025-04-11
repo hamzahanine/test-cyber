@@ -1,7 +1,7 @@
 
 
 body {
-    background-image: url("../assets/fond-ecran.png"); 
+    background-image: url("/fond-ecran.png"); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
